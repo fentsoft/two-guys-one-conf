@@ -22,7 +22,7 @@
   in
   {
     darwinConfigurations = {
-      # sudo darwin-rebuild switch --flake .#m2-air
+      # sudo darwin-rebuild switch --flake ".#m2-air"
       m2-air = mkDarwin { system = "aarch64-darwin"; host = "m2-air"; };
     };
   };

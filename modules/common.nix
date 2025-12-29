@@ -17,7 +17,10 @@
     environment.systemPackages = with pkgs; [
       curl
       git
+      nixd
+      nixfmt-rfc-style
       stow
+      tree
     ];
   };
 }
