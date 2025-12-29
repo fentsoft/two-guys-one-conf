@@ -20,12 +20,22 @@
     users.users.${config.my.username}.shell = pkgs.zsh;
 
     environment.systemPackages = with pkgs; [
+      btop
+      croc
       curl
+      dust
+      ffmpeg
+      fira-code
       git
+      gnupg
       nixd
       nixfmt-rfc-style
+      nodejs_24
       stow
       tree
+      unzip
+      wget
+      zip
     ];
   };
 }
