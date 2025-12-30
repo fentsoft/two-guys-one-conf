@@ -56,6 +56,8 @@ in
       };
 
       NSGlobalDomain = {
+        NSWindowResizeTime = 0.05;
+
         AppleShowAllExtensions = true;
         ApplePressAndHoldEnabled = false;
 
@@ -93,6 +95,15 @@ in
       };
 
       CustomUserPreferences = {
+        "com.apple.Spotlight" = {
+          # hide spotlight menu bar item
+          "NSStatusItem VisibleCC Item-0" = null;
+        };
+        "com.apple.screensaver" = {
+          # Require password immediately after sleep or screen saver begins
+          askForPassword = 1;
+          askForPasswordDelay = 0;
+        };
         "com.apple.desktopservices" = {
           DSDontWriteNetworkStores = true;
           DSDontWriteUSBStores = true;
@@ -101,9 +112,9 @@ in
           NSColorSimulateHardwareAccent = true;
           NSColorSimulatedHardwareEnclosureNumber = 5;
         };
-        # use option+^ to "Move focus to next window" (german keyboard, works after re-login)
         "com.apple.symbolichotkeys" = {
           AppleSymbolicHotKeys = {
+            # use option+^ to "Move focus to next window" (german keyboard, works after re-login)
             "27" = {
               enabled = true;
               value = {
@@ -215,9 +226,9 @@ in
 
       menuExtraClock = {
         FlashDateSeparators = false;
-        ShowDate = 1;
-        ShowDayOfMonth = true;
-        ShowDayOfWeek = true;
+        ShowDate = 2;
+        ShowDayOfMonth = false;
+        ShowDayOfWeek = false;
         ShowSeconds = true;
       };
 
@@ -234,6 +245,8 @@ in
 
       controlcenter = {
         BatteryShowPercentage = true;
+        NowPlaying = false;
+        Sound = true;
       };
     };
   };
