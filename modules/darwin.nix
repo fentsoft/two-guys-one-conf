@@ -4,8 +4,11 @@
   host,
   ...
 }:
+let
+  userHome = "/Users/${config.my.username}";
+in
 {
-  users.users.${config.my.username}.home = "/Users/${config.my.username}";
+  users.users.${config.my.username}.home = userHome;
   security.pam.services.sudo_local.touchIdAuth = true;
 
   launchd.user.agents.set-wallpaper = {
@@ -117,6 +120,45 @@
         wvous-tr-corner = 1;
         wvous-bl-corner = 5;
         wvous-br-corner = 1;
+
+        persistent-apps = [
+          "/System/Applications/Messages.app/"
+          "/Applications/Spark Desktop.app/"
+          "/System/Applications/Photos.app/"
+          "/System/Applications/Notes.app"
+          "/System/Applications/FaceTime.app/"
+          "/System/Applications/Reminders.app/"
+          "/System/Applications/Home.app/"
+          "/System/Applications/System Settings.app/"
+          "/Applications/Brave Browser.app/"
+          "/Applications/Visual Studio Code.app/"
+          "/Applications/iTerm.app"
+          "/Applications/Hoppscotch.app/"
+          "/Applications/Obsidian.app/"
+          "/Applications/WhatsApp.app/"
+          "/Applications/Telegram Desktop.app/"
+          "/Applications/Xcode.app"
+          "/Applications/UTM.app"
+          "/Applications/BambuStudio.app"
+        ];
+        persistent-others = [
+          {
+            folder = {
+              path = "${userHome}/Downloads/";
+              arrangement = "date-added";
+              displayas = "stack";
+              showas = "fan";
+            };
+          }
+          {
+            folder = {
+              path = "${userHome}/Desktop/";
+              arrangement = "date-added";
+              displayas = "stack";
+              showas = "fan";
+            };
+          }
+        ];
       };
 
       finder = {
