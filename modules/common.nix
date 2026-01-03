@@ -90,6 +90,10 @@ in
       TUCKR_HOME = "/etc/nix-darwin";
     };
 
+    fonts.packages = [
+      pkgs.nerd-fonts.fira-code
+    ];
+
     environment.systemPackages = with pkgs; [
       btop
       bun
