@@ -23,7 +23,7 @@
     }:
       nix-darwin.lib.darwinSystem {
         inherit system;
-        specialArgs = {inherit self host;};
+        specialArgs = {inherit self host inputs;};
         modules = [
           ./modules/common.nix
           ./modules/darwin.nix
