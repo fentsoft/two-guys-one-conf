@@ -16,7 +16,7 @@
       cleanup = "zap";
       upgrade = false;
     };
-    brews = [ ];
+    brews = [ "mas" ];
     casks = [
       "affinity"
       "aldente"
@@ -59,5 +59,8 @@
       "whatsapp"
     ];
     taps = [ ];
+    masApps = {
+      Xcode = 497799835;
+    };
   };
 }
