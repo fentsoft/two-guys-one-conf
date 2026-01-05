@@ -121,6 +121,9 @@ in
           askForPassword = 1;
           askForPasswordDelay = 0;
         };
+        "com.apple.screencapture" = {
+          "save-selections" = 0;
+        };
         "com.apple.desktopservices" = {
           DSDontWriteNetworkStores = true;
           DSDontWriteUSBStores = true;
