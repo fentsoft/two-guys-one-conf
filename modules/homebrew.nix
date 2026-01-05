@@ -16,7 +16,9 @@
       cleanup = "zap";
       upgrade = false;
     };
-    brews = ["mas"];
+    brews = [
+      "mas"
+    ];
     taps = ["mhaeuser/mhaeuser"];
     casks = [
       "affinity"
@@ -63,6 +65,7 @@
     ];
     masApps = {
       Xcode = 497799835;
+      WireGuard = 1451685025;
     };
   };
 }
