@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  inputs,
   ...
 }: let
   ytDlpUrl =
@@ -44,7 +45,10 @@ in {
   config = {
     my.username = "o";
 
-    nix.settings.experimental-features = "nix-command flakes";
+    nix = {
+      settings.experimental-features = "nix-command flakes";
+      nixPath = ["nixpkgs=${inputs.nixpkgs}"];
+    };
 
     home-manager = {
       useGlobalPkgs = true;
