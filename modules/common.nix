@@ -95,6 +95,7 @@ in
     ];
 
     environment.systemPackages = with pkgs; [
+      alejandra
       btop
       bun
       croc
@@ -106,7 +107,6 @@ in
       gnupg
       nerd-fonts.fira-code
       nixd
-      nixfmt-rfc-style
       nodejs_24
       stow
       tree
