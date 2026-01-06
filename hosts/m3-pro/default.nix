@@ -3,6 +3,12 @@
 
   my.username = "A200007423";
 
+  networking = {
+    hostName = "T001849997";
+    computerName = "T001849997";
+    localHostName = "T001849997";
+  };
+
   system.defaults.dock.persistent-apps = [
     "/System/Applications/Messages.app"
     "/Applications/Spark Desktop.app"
