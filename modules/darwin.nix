@@ -70,10 +70,6 @@ in {
         LoginwindowText = host;
       };
 
-      # ".GlobalPreferences" = {
-      #   "com.apple.mouse.scaling" = -1.0;
-      # };
-
       NSGlobalDomain = {
         NSWindowResizeTime = 0.05;
 
@@ -121,7 +117,7 @@ in {
           "com.apple.mouse.scaling" = 0.875;
         };
         "com.apple.Spotlight" = {
-          # hide spotlight menu bar item
+          # hide spotlight menu bar item, doesn't work
           "NSStatusItem VisibleCC Item-0" = null;
         };
         "com.apple.screensaver" = {

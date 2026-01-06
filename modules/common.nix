@@ -14,7 +14,7 @@
     set -euo pipefail
 
     BIN="$HOME/.cache/yt-dlp/yt-dlp"
-    MAX_AGE=$((48 * 60 * 60))
+    MAX_AGE=$((48 * 60 * 60)) # 48 hours
     NOW=$(date +%s)
 
     stat_mtime() {
@@ -109,6 +109,7 @@ in {
       nerd-fonts.fira-code
       nixd
       nodejs_24
+      pnpm
       stow
       tree
       tuckr
