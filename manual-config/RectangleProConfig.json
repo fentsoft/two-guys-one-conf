@@ -41,7 +41,7 @@
       "int" : 0
     },
     "appSpecs" : {
-      "string" : "[{\"children\":[{\"bundleId\":\"com.tdesktop.Telegram\",\"titleMatching\":1,\"h\":\"1050\",\"loc\":3,\"id\":17,\"otherAppOperation\":1,\"w\":\"1252\",\"title\":\"UrvzpWWQ4hPa4m6qPFkCVopexv4\\\/RG+fj19bZCMN7jl9iihvgSiHAiRC7P\\\/4Dq1o9v73KVbdptGz+yaTxkgj\",\"displayFrame\":[[2048,72],[1920,1080]],\"display\":4},{\"bundleId\":\"net.whatsapp.WhatsApp\",\"titleMatching\":1,\"h\":\"1050\",\"loc\":4,\"id\":243,\"otherAppOperation\":1,\"w\":\"800\",\"title\":\"NQ2GvM7PGT0JoOUD13bvcJT9MGSZksNBBp3QJB9WuEYQvqIXi\\\/g4\",\"displayFrame\":[[2048,72],[1920,1080]],\"display\":4}],\"isGroup\":true,\"loc\":0,\"onWindowOpen\":true,\"id\":31,\"otherAppOperation\":1,\"displayRestored\":true,\"name\":\"auto position telegram\"},{\"otherAppOperation\":1,\"isGroup\":true,\"id\":236,\"loc\":0,\"shortcut\":{\"keyCode\":6,\"modifierFlags\":1310720},\"children\":[{\"titleSubstring\":\"\",\"bundleId\":\"net.imput.helium\",\"titleMatching\":4,\"h\":\"1050\",\"loc\":4,\"id\":228,\"otherAppOperation\":1,\"w\":\"1440\",\"title\":\"EUT3pHLXktP4CFygU5Aizq92LLBK9eIFxY0dYA8nR5vd2ZLzy\\\/W+1\\\/qt8OyMXQ==\",\"titleRegex\":\"- YouTube - Helium$\",\"displayFrame\":[[-1920,72],[1920,1080]],\"display\":1}],\"name\":\"yt left screen by title\"}]"
+      "string" : "[{\"displayRestored\":true,\"name\":\"auto position stuff\",\"onWindowOpen\":true,\"loc\":0,\"otherAppOperation\":1,\"isGroup\":true,\"id\":31,\"children\":[{\"display\":4,\"w\":\"1252\",\"titleMatching\":1,\"bundleId\":\"com.tdesktop.Telegram\",\"title\":\"BVKEQAM47dDgQogZh4XlVIIM7+cBY3h0VBS1\\\/KlGOj0vZFhxXakmP7\\\/M+B1Ol8tYyE0ouuVKs5GYdfCfEBjc\",\"displayFrame\":[[2048,72],[1920,1080]],\"h\":\"1050\",\"loc\":3,\"otherAppOperation\":1,\"id\":17},{\"display\":4,\"w\":\"800\",\"titleMatching\":1,\"bundleId\":\"net.whatsapp.WhatsApp\",\"title\":\"7CrBKMNvzTSmWVNONCRm98Bk8QPAVhVra1chQsMBXeRAMfFfZJQk\",\"displayFrame\":[[2048,72],[1920,1080]],\"h\":\"1050\",\"loc\":4,\"otherAppOperation\":1,\"id\":243},{\"display\":2,\"w\":\"1210\",\"titleMatching\":1,\"bundleId\":\"com.spotify.client\",\"title\":\"6ET69kVgSibqD1xeKX5VGr\\\/HSpdT2++83qo\\\/RlMahZaWqZP9ztvdJhGRgg==\",\"displayFrame\":[[-1706,-910],[1512,982]],\"h\":\"949\",\"loc\":4,\"otherAppOperation\":1,\"id\":263}]},{\"name\":\"yt left screen by title\",\"shortcut\":{\"modifierFlags\":1310720,\"keyCode\":6},\"loc\":0,\"otherAppOperation\":1,\"isGroup\":true,\"id\":236,\"children\":[{\"display\":1,\"w\":\"1440\",\"titleMatching\":4,\"bundleId\":\"net.imput.helium\",\"title\":\"tY\\\/PsjhuMHxqVWOAUW6AHqgPM1IE5waMhZ6vTcTXW5qnnwOJmH7TaWxQ5bs8pg==\",\"displayFrame\":[[-1920,72],[1920,1080]],\"titleSubstring\":\"\",\"h\":\"1050\",\"loc\":4,\"otherAppOperation\":1,\"id\":228,\"titleRegex\":\"- YouTube - Helium$\"}]}]"
     },
     "applyGapToEdges" : {
       "int" : 0
@@ -314,7 +314,7 @@
       "int" : 2
     },
     "reticleColor" : {
-      "string" : "{\"alpha\":0.5,\"red\":0.8,\"green\":0.3,\"blue\":0.2}"
+      "string" : "{\"green\":0.3,\"blue\":0.2,\"alpha\":0.5,\"red\":0.8}"
     },
     "reticleDisplayMinDist" : {
       "float" : 0
@@ -626,6 +626,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 789417231.890858,
+  "timestamp" : 789481061.083838,
   "version" : "210"
 }
