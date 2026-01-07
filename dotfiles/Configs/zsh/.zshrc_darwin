@@ -1,4 +1,8 @@
-alias r='sudo darwin-rebuild switch'
+if [[ "$(scutil --get LocalHostName)" == "T001849997" ]]; then
+	alias r='sudo darwin-rebuild switch --flake ".#m3-pro"'
+else
+	alias r='sudo darwin-rebuild switch'
+fi
 
 alias publicip='curl -4 -s ifconfig.co'
 alias localip='ipconfig getifaddr en0'
