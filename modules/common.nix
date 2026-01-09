@@ -96,6 +96,7 @@ in {
     ];
 
     environment.systemPackages = with pkgs; [
+      age
       alejandra
       btop
       bun
@@ -112,6 +113,7 @@ in {
       nixd
       nodejs_24
       pnpm
+      sops
       stow
       tree
       tuckr
