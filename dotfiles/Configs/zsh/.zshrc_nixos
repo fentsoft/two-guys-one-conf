@@ -1,4 +1,4 @@
-alias r='sudo nix-rebuild switch'
+alias r='sudo nixos-rebuild switch'
 alias u='cd /etc/nixos && git pull && r; cd -'
 
 alias publicip='curl -4 -s ifconfig.co'
