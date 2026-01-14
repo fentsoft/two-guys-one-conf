@@ -21,7 +21,6 @@
     ];
     taps = [
       "mhaeuser/mhaeuser" # battery toolkit
-      "psharma04/dorion" # dorion discord client
     ];
     casks = [
       "affinity"
@@ -40,7 +39,6 @@
       "dbeaver-community"
       "displaylink"
       "docker-desktop"
-      "dorion"
       "finicky"
       "helium-browser"
       "hoppscotch"
@@ -64,6 +62,7 @@
       "telegram-desktop"
       "the-unarchiver"
       "utm"
+      "vesktop"
       "visual-studio-code"
       "whatsapp"
     ];
