@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./komodo.nix
     ./raid.nix
     ./system-configuration.nix
   ];
@@ -15,6 +16,7 @@
   environment.systemPackages = with pkgs; [
     caddy
     docker
+    komodo
     lm_sensors
     mdadm
   ];
