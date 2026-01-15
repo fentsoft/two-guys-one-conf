@@ -1,5 +1,7 @@
 if [[ "$(scutil --get LocalHostName)" == "T001849997" ]]; then
 	alias r='sudo darwin-rebuild switch --flake ".#m3-pro"'
+elif [[ "$(scutil --get LocalHostName)" == "T0024f8a63" ]]; then
+	alias r='sudo darwin-rebuild switch --flake ".#m4-pro"'
 else
 	alias r='sudo darwin-rebuild switch'
 fi
