@@ -48,6 +48,7 @@
           "connectmenow"
           "darkmodebuddy"
           "dbeaver-community"
+          "discord"
           "displaylink"
           "docker-desktop"
           "finicky"
@@ -73,7 +74,6 @@
           "telegram-desktop"
           "the-unarchiver"
           "utm"
-          "vesktop"
           "visual-studio-code"
           "whatsapp"
         ];
