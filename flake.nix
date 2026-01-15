@@ -20,12 +20,14 @@
     mkDarwin = {
       system,
       host,
+      guy,
     }:
       nix-darwin.lib.darwinSystem {
         inherit system;
-        specialArgs = {inherit self host inputs;};
+        specialArgs = {inherit self host guy inputs;};
         modules = [
           ./modules/tuckr.nix
+          ./guys/${guy}/default.nix
           ./modules/common.nix
           ./modules/darwin.nix
           nix-homebrew.darwinModules.nix-homebrew
@@ -38,12 +40,14 @@
     mkNixos = {
       system,
       host,
+      guy,
     }:
       nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit self host inputs;};
+        specialArgs = {inherit self host guy inputs;};
         modules = [
           ./modules/tuckr.nix
+          ./guys/${guy}/default.nix
           ./modules/common.nix
           ./modules/nixos.nix
           home-manager.nixosModules.home-manager
@@ -56,11 +60,13 @@
       m2-air = mkDarwin {
         system = "aarch64-darwin";
         host = "m2-air";
+        guy = "oskar";
       };
       # sudo darwin-rebuild switch --flake ".#m3-pro"
       m3-pro = mkDarwin {
         system = "aarch64-darwin";
         host = "m3-pro";
+        guy = "oskar";
       };
     };
 
@@ -69,6 +75,7 @@
       lserver = mkNixos {
         system = "x86_64-linux";
         host = "lserver";
+        guy = "oskar";
       };
     };
   };
