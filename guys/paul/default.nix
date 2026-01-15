@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   environment.variables = {
     TUCKR_CUSTOM_TARGETS = "paul";
   };
@@ -15,7 +19,7 @@
         # todo
       ];
     }
-    // lib.optionalAttrs (lib.hostPlatform.isDarwin) {
+    // lib.optionalAttrs (pkgs.stdenv.hostPlatform.isDarwin) {
       homebrew = {
         taps = [
           "mhaeuser/mhaeuser" # battery toolkit
