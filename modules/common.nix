@@ -125,6 +125,7 @@ in {
       go
       goreleaser
       gow
+      lazydocker
       nerd-fonts.fira-code
       nerd-fonts.jetbrains-mono
       nixd
