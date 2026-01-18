@@ -1,0 +1,62 @@
+{
+  "actions": [
+    {
+      "key": "q",
+      "type": "application",
+      "value": "/Applications/Zen.app"
+    },
+    {
+      "key": "t",
+      "type": "application",
+      "value": "/Applications/iTerm.app"
+    },
+    {
+      "key": "c",
+      "type": "application",
+      "value": "/Applications/Visual Studio Code.app"
+    },
+    {
+      "actions": [
+        {
+          "key": "e",
+          "type": "url",
+          "value": "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        },
+        {
+          "key": "p",
+          "type": "url",
+          "value": "raycast://confetti"
+        },
+        {
+          "key": "c",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "key": "r",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "s",
+          "type": "application",
+          "value": "/Applications/Spark Desktop.app"
+        },
+        {
+          "key": "t",
+          "type": "application",
+          "value": "/Applications/Microsoft Teams.app"
+        },
+        {
+          "key": "i",
+          "type": "application",
+          "value": "/Applications/Microsoft Outlook.app"
+        }
+      ],
+      "key": "w",
+      "type": "group"
+    }
+  ],
+  "type": "group"
+}
