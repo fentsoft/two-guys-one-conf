@@ -45,6 +45,7 @@
           "bettertouchtool"
           "blender"
           "bleunlock"
+          "chatgpt"
           "connectmenow"
           "darkmodebuddy"
           "dbeaver-community"
