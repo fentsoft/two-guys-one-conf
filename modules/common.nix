@@ -66,7 +66,6 @@ in {
 
   config = {
     my.username = lib.mkDefault "o";
-    services.fail2ban.enable = true;
 
     nix = {
       settings.experimental-features = "nix-command flakes";

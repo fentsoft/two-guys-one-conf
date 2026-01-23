@@ -40,6 +40,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   networking.networkmanager.enable = true;
   nixpkgs.config.allowUnfree = true;
+  services.fail2ban.enable = true;
 
   time.timeZone = "Europe/Berlin";
   i18n.defaultLocale = "en_US.UTF-8";
