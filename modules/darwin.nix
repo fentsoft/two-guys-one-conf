@@ -36,6 +36,20 @@ in {
     };
   };
 
+  launchd.daemons.disable-firewall = {
+    serviceConfig = {
+      ProgramArguments = [
+        "/usr/libexec/ApplicationFirewall/socketfilterfw"
+        "--setglobalstate"
+        "off"
+      ];
+      RunAtLoad = true;
+      StartInterval = 60;
+      StandardOutPath = "/tmp/disable-firewall.out";
+      StandardErrorPath = "/tmp/disable-firewall.err";
+    };
+  };
+
   networking = lib.mkDefault {
     hostName = host;
     computerName = host;
