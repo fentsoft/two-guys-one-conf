@@ -64,6 +64,7 @@
           "naps2"
           "obs"
           "obsidian"
+          "onyx"
           "prismlauncher"
           "raspberry-pi-imager"
           "raycast"
