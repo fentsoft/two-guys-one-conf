@@ -1,10 +1,15 @@
 {
   lib,
   pkgs,
+  config,
   ...
 }: {
   environment.variables = {
     TUCKR_CUSTOM_TARGETS = "oskar";
+  };
+
+  home-manager = lib.optionalAttrs (pkgs.stdenv.hostPlatform.isDarwin) {
+    users.${config.my.username}.services.syncthing.enable = true;
   };
 
   my =
