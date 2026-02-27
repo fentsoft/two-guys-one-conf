@@ -78,6 +78,7 @@
           "scroll-reverser"
           "spotify"
           "stats"
+          "steam"
           "telegram-desktop"
           "the-unarchiver"
           "utm"
