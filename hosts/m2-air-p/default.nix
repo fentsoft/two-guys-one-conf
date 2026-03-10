@@ -1,14 +1,6 @@
 {...}: {
   nixpkgs.hostPlatform = "aarch64-darwin";
 
-  my.username = "A200266873";
-
-  networking = {
-    hostName = "T0024f8a63";
-    computerName = "T0024f8a63";
-    localHostName = "T0024f8a63";
-  };
-
   system.defaults.CustomUserPreferences."NSGlobalDomain" = {
     NSColorSimulateHardwareAccent = null;
     NSColorSimulatedHardwareEnclosureNumber = null;

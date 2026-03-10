@@ -56,17 +56,17 @@
       };
   in {
     darwinConfigurations = {
-      # sudo darwin-rebuild switch --flake ".#m2-air-p"
-      m2-air = mkDarwin {
-        system = "aarch64-darwin";
-        host = "m2-air-p";
-        guy = "paul";
-      };
       # sudo darwin-rebuild switch --flake ".#m2-air"
       m2-air = mkDarwin {
         system = "aarch64-darwin";
         host = "m2-air";
         guy = "oskar";
+      };
+      # sudo darwin-rebuild switch --flake ".#m2-air-p"
+      m2-air-p = mkDarwin {
+        system = "aarch64-darwin";
+        host = "m2-air-p";
+        guy = "paul";
       };
       # sudo darwin-rebuild switch --flake ".#m3-pro"
       m3-pro = mkDarwin {
