@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  flake-check:
+    name: Flake Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Run flake check
+        run: nix flake check --show-trace
+
+  build-configurations:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: lserver
+            runner: ubuntu-latest
+            attr: nixosConfigurations.lserver.config.system.build.toplevel
+          - name: m2-air
+            runner: macos-14
+            attr: darwinConfigurations.m2-air.config.system.build.toplevel
+          - name: m3-pro
+            runner: macos-14
+            attr: darwinConfigurations.m3-pro.config.system.build.toplevel
+          - name: m4-pro
+            runner: macos-14
+            attr: darwinConfigurations.m4-pro.config.system.build.toplevel
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Build system
+        run: nix build --print-build-logs ".#${{ matrix.attr }}"
