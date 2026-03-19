@@ -55,3 +55,28 @@ w() {
 
 	osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"$TARGET\" as POSIX file"
 }
+
+dfw() (
+	local firewall_bin="/usr/libexec/ApplicationFirewall/socketfilterfw"
+
+	cleanup() {
+		sudo -n "$firewall_bin" --setglobalstate on >/dev/null
+	}
+
+	stop() {
+		trap - EXIT INT TERM HUP
+		cleanup
+		exit 130
+	}
+
+	sudo -v || exit 1
+	trap cleanup EXIT
+	trap stop INT TERM HUP
+
+	echo "Disabling macOS firewall every 60s. Press Ctrl+C to stop."
+
+	while true; do
+		sudo -n "$firewall_bin" --setglobalstate off >/dev/null || exit $?
+		sleep 60
+	done
+)
