@@ -88,6 +88,7 @@ in {
             user.email = config.my.git.userEmail;
             pull.rebase = true;
             rebase.autoStash = true;
+            init.defaultBranch = "main";
           };
         };
       };
