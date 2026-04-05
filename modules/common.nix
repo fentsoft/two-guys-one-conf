@@ -122,6 +122,7 @@ in {
       deno
       dust
       ffmpeg
+      gh
       git
       go
       goreleaser
