@@ -37,6 +37,7 @@
       homebrew = {
         taps = [
           "mhaeuser/mhaeuser" # battery toolkit
+          "xykong/tap" # flux-markdown
         ];
         casks = [
           "affinity"
@@ -58,6 +59,7 @@
           "displaylink"
           "docker-desktop"
           "finicky"
+          "flux-markdown"
           "helium-browser"
           "hoppscotch"
           "iina"
@@ -65,6 +67,7 @@
           "jordanbaird-ice@beta"
           "keepingyouawake"
           "keyboardcleantool"
+          "linearmouse"
           "mullvad-vpn"
           "naps2"
           "obs"
@@ -75,7 +78,6 @@
           "raycast"
           "readdle-spark"
           "rectangle-pro"
-          "scroll-reverser"
           "spotify"
           "stats"
           "steam"
@@ -84,7 +86,6 @@
           "utm"
           "visual-studio-code"
           "whatsapp"
-          "xykong/tap/flux-markdown"
         ];
       };
     };
