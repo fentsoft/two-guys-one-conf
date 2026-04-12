@@ -84,6 +84,7 @@
           "utm"
           "visual-studio-code"
           "whatsapp"
+          "xykong/tap/flux-markdown"
         ];
       };
     };
