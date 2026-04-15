@@ -38,6 +38,11 @@
         taps = [
           "mhaeuser/mhaeuser" # battery toolkit
           "xykong/tap" # flux-markdown
+          "tinygo-org/tools"
+        ];
+        brews = [
+          "esptool"
+          "tinygo"
         ];
         casks = [
           "affinity"
