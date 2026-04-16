@@ -42,11 +42,13 @@
         ];
         brews = [
           "esptool"
-          "tinygo"
+          "dfu-util"
+          "cmake"
         ];
         casks = [
           "affinity"
           "android-platform-tools"
+          "arduino-ide"
           "audacity"
           "balenaetcher"
           "bambu-studio"
