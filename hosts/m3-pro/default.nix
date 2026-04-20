@@ -26,7 +26,7 @@
     "/System/Applications/System Settings.app"
     "/Applications/Microsoft Teams.app"
     "/Applications/Microsoft Outlook.app"
-    "/Applications/Microsoft Edge.app"
+    "/Applications/Google Chrome.app"
     "/Applications/Helium.app"
     "/Applications/Visual Studio Code.app"
     "/Applications/iTerm.app"
