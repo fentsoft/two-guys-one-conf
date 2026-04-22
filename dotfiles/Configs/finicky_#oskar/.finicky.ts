@@ -8,7 +8,7 @@ const anyHostEndsWith = (url: URL, hosts: string[]) => {
 }
 
 const isWorkMachine = () => {
-  return finicky.getSystemInfo().localizedName.startsWith("T")
+  return finicky.getSystemInfo().localizedName.startsWith("LMDT")
 }
 
 export default {
