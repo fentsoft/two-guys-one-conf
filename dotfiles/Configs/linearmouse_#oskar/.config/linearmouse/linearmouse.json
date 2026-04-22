@@ -27,9 +27,7 @@
         "distance" : {
           "vertical" : "auto"
         },
-        "reverse" : {
-          "vertical" : true
-        },
+        "reverse" : true,
         "speed" : {
           "vertical" : 0
         }
