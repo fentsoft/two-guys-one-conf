@@ -89,6 +89,12 @@
         host = "lserver";
         guy = "oskar";
       };
+      # sudo nixos-rebuild switch --flake ".#mini7"
+      mini7 = mkNixos {
+        system = "x86_64-linux";
+        host = "mini7";
+        guy = "paul";
+      };
     };
   };
 }
