@@ -7,7 +7,7 @@
     TUCKR_CUSTOM_TARGETS = "paul";
   };
 
-  system.defaults.screencapture.target = lib.mkForce "clipboard";
+  # system.defaults.screencapture.target = lib.mkForce "clipboard";
 
   my =
     {
