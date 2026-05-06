@@ -41,9 +41,10 @@
           "tinygo-org/tools"
         ];
         brews = [
-          "esptool"
-          "dfu-util"
           "cmake"
+          "dfu-util"
+          "esptool"
+          "opensc"
         ];
         casks = [
           "affinity"
