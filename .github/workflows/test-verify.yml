@@ -37,6 +37,10 @@ jobs:
           - name: lserver
             runner: ubuntu-latest
             attr: nixosConfigurations.lserver.config.system.build.toplevel
+          - name: mini7
+            runner: ubuntu-latest
+            attr: nixosConfigurations.mini7.config.system.build.toplevel
+
           - name: m2-air
             runner: macos-14
             attr: darwinConfigurations.m2-air.config.system.build.toplevel
