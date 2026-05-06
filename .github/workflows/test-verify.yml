@@ -42,16 +42,16 @@ jobs:
             attr: nixosConfigurations.mini7.config.system.build.toplevel
 
           - name: m2-air
-            runner: macos-14
+            runner: macos-26
             attr: darwinConfigurations.m2-air.config.system.build.toplevel
           - name: m2-air-p
-            runner: macos-14
+            runner: macos-26
             attr: darwinConfigurations.m2-air-p.config.system.build.toplevel
           - name: m3-pro
-            runner: macos-14
+            runner: macos-26
             attr: darwinConfigurations.m3-pro.config.system.build.toplevel
           - name: m4-pro
-            runner: macos-14
+            runner: macos-26
             attr: darwinConfigurations.m4-pro.config.system.build.toplevel
 
     steps:
