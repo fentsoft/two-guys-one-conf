@@ -16,7 +16,7 @@ jobs:
           CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           MESSAGE: ${{ github.event.head_commit.message }}
         run: |
-          ESCAPED_MESSAGE="$(printf '%s' "$MESSAGE" | sed -e 's/[\\_*[\]()~`>#+=|{}.!-]/\\&/g')"
+          ESCAPED_MESSAGE="$(printf '%s' "$MESSAGE" | sed -e 's/[][\\_*()~`>#+=|{}.!-]/\\&/g')"
           curl -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" \
             --data-urlencode "chat_id=$CHANNEL_ID" \
             --data-urlencode "text=$ESCAPED_MESSAGE" \
