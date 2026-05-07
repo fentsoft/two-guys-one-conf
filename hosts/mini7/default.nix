@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./komodo.nix
     ./restic.nix
   ];
 
@@ -17,7 +16,6 @@
   environment.systemPackages = with pkgs; [
     caddy
     docker
-    komodo
   ];
 
   boot.kernelParams = ["consoleblank=20"];
