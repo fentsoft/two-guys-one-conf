@@ -121,6 +121,7 @@ in {
       curl
       deno
       dust
+      esphome
       ffmpeg
       gh
       git
