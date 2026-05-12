@@ -4,9 +4,9 @@
   my.username = "A200266873";
 
   networking = {
-    hostName = "T0024f8a63";
-    computerName = "T0024f8a63";
-    localHostName = "T0024f8a63";
+    hostName = "LMDT0024f8a63";
+    computerName = "LMDT0024f8a63";
+    localHostName = "LMDT0024f8a63";
   };
 
   system.defaults.CustomUserPreferences."NSGlobalDomain" = {

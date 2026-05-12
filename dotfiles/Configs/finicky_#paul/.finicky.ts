@@ -1,14 +1,14 @@
 import type { FinickyConfig } from "/Applications/Finicky.app/Contents/Resources/finicky.d.ts"
 
 const DEFAULT_BROWSER = "/Applications/Zen.app"
-const WORK_BROWSER = "/Applications/Microsoft Edge.app"
+const WORK_BROWSER = "/Applications/Google Chrome.app"
 
 const anyHostEndsWith = (url: URL, hosts: string[]) => {
   return hosts.some((host) => url.hostname.endsWith(host))
 }
 
 const isWorkMachine = () => {
-  return finicky.getSystemInfo().localizedName.startsWith("T")
+  return finicky.getSystemInfo().localizedName.startsWith("LMDT")
 }
 
 export default {
