@@ -29,10 +29,16 @@
         taps = [
           "mhaeuser/mhaeuser" # battery toolkit
           "nikitabobko/aerospace" # aerospace app
+          "tinygo-org/tools"
+        ];
+        brews = [
+          "cmake"
+          "dfu-util"
+          "esptool"
+          "opensc"
         ];
         casks = [
           "aerospace"
-          "arduino-ide"
           "audacity"
           "anaconda"
           "bambu-studio"
